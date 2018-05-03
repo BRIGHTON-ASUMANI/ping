@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)https://coderwall.com/p/2hnbua/how-to-add-an-existing-folder-on-your-computer-to-a-new-git-repo -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/89b8075f9d"></script><script src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/nr-1071.min.js.download"></script><script type="text/javascript" async="" src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/50775e2d30a1d50002000221.js.download"></script><script async="" src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/analytics.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"89b8075f9d","applicationID":"31563158","transactionName":"JVlfRkRcW1hRRR9HRAlCWEJFHERcW0A=","queueTime":9,"applicationTime":80,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta property="current_user:id">
+
+<title>How to Add an Existing Folder on Your Computer to a New Git Repo</title>
+<meta name="description" content="A protip by victorbrca about git and bash.">
+<meta name="keywords" content="git, bash">
+<link rel="canonical" href="https://coderwall.com/p/2hnbua/how-to-add-an-existing-folder-on-your-computer-to-a-new-git-repo">
+<link rel="author" href="https://coderwall.com/victorbrca">
+<meta property="og:title" content="How to Add an Existing Folder on Your Computer to a New Git Repo">
+<meta property="og:url" content="https://coderwall.com/p/2hnbua/how-to-add-an-existing-folder-on-your-computer-to-a-new-git-repo">
+<meta property="og:site_name" content="Coderwall">
+<meta property="og:description" content="A protip by victorbrca about git and bash.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://coderwall-assets-0.s3.amazonaws.com/uploads/user/avatar/120977/409302_10151131950910230_214813917_n-2.jpg">
+<meta name="twitter:title" content="How to Add an Existing Folder on Your Computer to a New Git Repo">
+<meta name="twitter:url" content="https://coderwall.com/p/2hnbua/how-to-add-an-existing-folder-on-your-computer-to-a-new-git-repo">
+<meta name="twitter:site_name" content="Coderwall">
+<meta name="twitter:site" content="@coderwall">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://coderwall-assets-0.s3.amazonaws.com/uploads/user/avatar/120977/409302_10151131950910230_214813917_n-2.jpg">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" media="all" href="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/application_static-8cd0567f17b372fd07cb9de3659f01a06b0ac69ab55f9c66d395f0b8ebfe2180.css" data-turbolinks-track="reload">
+
+<script src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/application_static-0a29a8f0d477c0df2c190fab00c2a33aadf328a1289dc8d722ab0ef12ddc6336.js.download" data-turbolinks-track="reload"></script><script type="text/javascript" async="" src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/bsa.js.download"></script>
+<script src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/pEaCoeG7.js.download"></script>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="cbePQDwIEMZokLPybMGpbPR8SiU4wVIRl6rs+fBY4Jczdmz2Y6FGGsRvonTc0qz2cE6PzRiH+w+ISYipg67l4g==">
+<!-- https://developers.google.com/analytics/devguides/collection/analyticsjs/sending-hits -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-797907-8', 'auto');
+  </script>
+
+
+<link rel="stylesheet" type="text/css" href="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/prettify.css"><script type="text/javascript" async="" src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/tagjs"></script><script type="text/javascript" id="_bsap_js_74f50e679004d8f4d62fec4b0f74ccf1" src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/s_74f50e679004d8f4d62fec4b0f74ccf1.js.download" async="async"></script><script type="text/javascript" src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/pro.js.download" id="_bsap_premium_pro"></script><script type="text/javascript" id="_bsaPRO_js" src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/saved_resource" async="async"></script><img src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/saved_resource(1)" width="1" height="1" border="0"><img src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/saved_resource(2)" width="1" height="1" border="0"><img src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/saved_resource(3)" width="1" height="1" border="0"><img src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/seg" width="1" height="1" border="0"><img src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/seg(1)" width="1" height="1" border="0"><img src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/seg(2)" width="1" height="1" border="0"><img src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/seg(3)" width="1" height="1" border="0"><img src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/seg(4)" width="1" height="1" border="0"><img src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/seg(5)" width="1" height="1" border="0"><img src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/seg(6)" width="1" height="1" border="0"><img src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/seg(7)" width="1" height="1" border="0"></head>
+<body>
+<div class="clearfix">
+<header class="border-bottom">
+<nav class="clearfix py2">
+<div class="col col-4 sm-col-3 md-col-2">
+<div class="sm-ml1">
+<a class="btn logo relative" href="https://coderwall.com/">
+<div class="absolute" style="top: 2px">
+<svg version="1.1" viewBox="0 0 20 20" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="5" cy="5" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="10" cy="5" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="15" cy="5" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="10" cy="10" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="15" cy="10" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="15" cy="15" r="1.4142" fill="#A26FF9"></circle>
+</svg>
+
+</div>
+<div class="left font-x-lg" style="padding-left: 35px;">
+Coderwall
+</div>
+</a>
+</div>
+</div>
+<div class="col col-3 sm-col-6 md-col-8 h6">
+<a class="btn muted-until-hover xs-hide sm-mr1" href="https://coderwall.com/t/ruby/popular">Ruby</a>
+<a class="btn muted-until-hover xs-hide" href="https://coderwall.com/t/python/popular">Python</a>
+<a class="btn muted-until-hover xs-hide" href="https://coderwall.com/t/javascript/popular">JavaScript</a>
+<a class="btn muted-until-hover xs-hide sm-only-hide" href="https://coderwall.com/t/web/popular">Front-End</a>
+<a class="btn muted-until-hover xs-hide sm-only-hide" href="https://coderwall.com/t/tools/popular">Tools</a>
+<a class="btn muted-until-hover xs-hide sm-only-hide" href="https://coderwall.com/t/ios/popular">iOS</a>
+<div class="btn dropdown" style="margin-top: -3px;">
+<span class="h3 muted-until-hover">
+<i class="fa fa-sort-down relative xs-hide" style="top: -2px; margin-right: 2px;"></i>
+</span>
+<span class="muted-until-hover xs-ml3">
+<span class="xs-hide">More</span>
+Tips
+</span>
+<div class="dropdown-content bg-white mt1 py1 border z4" style="left:0">
+<a class="btn py1 muted-until-hover sm-hide" href="https://coderwall.com/t/ruby/popular">Ruby</a>
+<a class="btn py1 muted-until-hover sm-hide" href="https://coderwall.com/t/python/popular">Python</a>
+<a class="btn py1 muted-until-hover sm-hide" href="https://coderwall.com/t/javascript/popular">JavaScript</a>
+<a class="btn py1 muted-until-hover md-hide nowrap" href="https://coderwall.com/t/web/popular">Front-End</a>
+<a class="btn py1 muted-until-hover md-hide" href="https://coderwall.com/t/tools/popular">Tools</a>
+<a class="btn py1 muted-until-hover md-hide" href="https://coderwall.com/t/ios/popular">iOS</a>
+<a class="btn py1 muted-until-hover" href="https://coderwall.com/t/php/popular">PHP</a>
+<a class="btn py1 muted-until-hover" href="https://coderwall.com/t/android/popular">Android</a>
+<a class="btn py1 muted-until-hover" href="https://coderwall.com/t/dot-net/popular">.NET</a>
+<a class="btn py1 muted-until-hover" href="https://coderwall.com/t/java/popular">Java</a>
+<a class="btn py1 muted-until-hover green md-hide" href="https://coderwall.com/jobs">Jobs</a>
+</div>
+</div>
+<a class="btn border-left xs-hide sm-only-hide" href="https://coderwall.com/jobs">
+<div class="green">Jobs</div>
+</a>
+</div>
+<div class="col col-5 sm-col-3 md-col-2">
+<div class="right pr2">
+<a class="btn btn-primary bg-purple white ml1" href="https://coderwall.com/signin">Sign In or Up</a>
+</div>
+</div>
+</nav>
+</header>
+
+
+<div class="mt1 px3">
+
+</div>
+<main>
+<div class="py2 px3"><div class="container protip" id="protip_103460" itemid="how-to-add-an-existing-folder-on-your-computer-to-a-new-git-repo" itemscope="">
+<div class="hide"><time datetime="2016-02-25T18:47:56Z" itemprop="dateModified">February 25, 2016 18:47</time></div>
+<div class="hide" itemprop="name">2hnbua</div>
+<div class="clearfix">
+<div class="sm-col sm-col sm-col-12 md-col-8">
+<div class="clearfix mt0 mb1">
+<div class="sm-right">
+<div class="diminish inline mr1">Last Updated: February 25, 2016</div>
+<span class="xs-hide">
+·
+<div class="diminish inline mx1">
+<i class="fa fa-eye"></i>
+10.69K
+</div>
+</span>
+·
+<span class="mx1"><a href="https://coderwall.com/victorbrca">victorbrca</a></span>
+<div class="avatar" itemprop="image" style="background-color: #4a859b;"><img src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/409302_10151131950910230_214813917_n-2.jpg" alt="409302 10151131950910230 214813917 n 2"></div>
+</div>
+</div>
+<div class="card p1" style="border-top:solid 5px #4a859b">
+<h1 class="mt4 mb2 center" itemprop="headline">How to Add an Existing Folder on Your Computer to a New Git Repo</h1>
+<div class="center mr1" itemprop="keywords">
+<h6 class="diminish inline px1"><a href="https://coderwall.com/t/git/popular">git</a></h6>
+<h6 class="diminish inline px1"><a href="https://coderwall.com/t/bash/popular">bash</a></h6>
+</div>
+<div class="content p3 mt4" itemprop="articleBody">
+<p>See this post on my <a href="http://wazem.blogspot.ca/2014/11/how-to-add-existing-folder-to-new-git.html" rel="nofollow">blog</a>.</p>
+
+<p>This is a simple and quick tutorial on how to add an existing folder (and files) on your computer to a new git repo.</p>
+
+<p>1- Create your project online (like <a href="https://bitbucket.org/" rel="nofollow">Bitbucket</a> or <a href="https://github.com/" rel="nofollow">GitHub</a>)</p>
+
+<p>2- CD into the folder where your files are and initialize it</p>
+
+<pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ git init
+</span><span class="typ">Initialized</span><span class="pln"> empty </span><span class="typ">Git</span><span class="pln"> repository </span><span class="kwd">in</span><span class="pln"> </span><span class="pun">/</span><span class="pln">home</span><span class="pun">/</span><span class="pln">victor</span><span class="pun">/</span><span class="typ">Sync</span><span class="pun">/</span><span class="typ">BitTorrentSync</span><span class="pun">/</span><span class="pln">victor</span><span class="pun">/</span><span class="pln">www</span><span class="pun">/.</span><span class="pln">git</span><span class="pun">/</span></code></pre>
+
+<p>3- Add all your files to be tracked (if you have anything that you want to exclude, you might want to do that with .gitignore now)</p>
+
+<pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ git </span><span class="kwd">add</span><span class="pln"> </span><span class="pun">*</span></code></pre>
+
+<p>4- Commit with a initial message</p>
+
+<pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ git commit </span><span class="pun">-</span><span class="pln">m </span><span class="str">"My initial commit"</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">master </span><span class="pun">(</span><span class="pln">root</span><span class="pun">-</span><span class="pln">commit</span><span class="pun">)</span><span class="pln"> </span><span class="lit">652fc1a</span><span class="pun">]</span><span class="pln"> </span><span class="typ">My</span><span class="pln"> initial commit
+ </span><span class="lit">1942</span><span class="pln"> files changed</span><span class="pun">,</span><span class="pln"> </span><span class="lit">41072</span><span class="pln"> insertions</span><span class="pun">(+)</span><span class="pln">
+ create mode </span><span class="lit">100644</span><span class="pln"> </span><span class="typ">Arri</span><span class="pun">/</span><span class="pln">ARRICAM </span><span class="typ">Checklist</span><span class="pln"> </span><span class="typ">Project</span><span class="pun">/</span><span class="pln">ARRICAM ST CHECKLIST</span><span class="pun">.</span><span class="pln">doc
+ create mode </span><span class="lit">100644</span><span class="pln"> </span><span class="typ">Arri</span><span class="pun">/</span><span class="pln">ARRICAM </span><span class="typ">Checklist</span><span class="pln"> </span><span class="typ">Project</span><span class="pun">/</span><span class="pln">k4</span><span class="pun">.</span><span class="lit">44256.0</span><span class="pun">.</span><span class="pln">jpg
+ create mode </span><span class="lit">100644</span><span class="pln"> </span><span class="typ">Arri</span><span class="pun">/</span><span class="pln">ARRICAM </span><span class="typ">Checklist</span><span class="pln"> </span><span class="typ">Project</span><span class="pun">/</span><span class="pln">k5</span><span class="pun">.</span><span class="lit">42387.0</span><span class="pun">.</span><span class="pln">jpg
+ create mode </span><span class="lit">100644</span><span class="pln"> </span><span class="typ">Arri</span><span class="pun">/</span><span class="pln">ARRICAM </span><span class="typ">Checklist</span><span class="pln"> </span><span class="typ">Project</span><span class="pun">/</span><span class="pln">k5</span><span class="pun">.</span><span class="lit">42388.0</span><span class="pun">.</span><span class="pln">jpg
+</span><span class="pun">...</span><span class="pln">
+ create mode </span><span class="lit">100644</span><span class="pln"> wazem</span><span class="pun">.</span><span class="pln">org</span><span class="pun">/</span><span class="kwd">sub</span><span class="pun">.</span><span class="pln">sites</span><span class="pun">/</span><span class="typ">Koken</span><span class="pun">/</span><span class="pln">photo</span><span class="pun">.</span><span class="pln">spheres
+ create mode </span><span class="lit">100644</span><span class="pln"> wazem</span><span class="pun">.</span><span class="pln">org</span><span class="pun">/</span><span class="kwd">sub</span><span class="pun">.</span><span class="pln">sites</span><span class="pun">/</span><span class="typ">Koken_Installer</span><span class="pun">.</span><span class="pln">zip
+ create mode </span><span class="lit">100644</span><span class="pln"> wazem</span><span class="pun">.</span><span class="pln">org</span><span class="pun">/</span><span class="kwd">sub</span><span class="pun">.</span><span class="pln">sites</span><span class="pun">/</span><span class="typ">Koken_Installer</span><span class="pun">/</span><span class="pln">koken</span><span class="pun">/</span><span class="pln">index</span><span class="pun">.</span><span class="pln">php</span></code></pre>
+
+<p>5- Add the remote location (example below is for Bitbucket)</p>
+
+<pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ git remote </span><span class="kwd">add</span><span class="pln"> origin git@bitbucket</span><span class="pun">.</span><span class="pln">org</span><span class="pun">:[</span><span class="pln">user</span><span class="pun">]/[</span><span class="kwd">my</span><span class="pun">-</span><span class="pln">repo</span><span class="pun">].</span><span class="pln">git</span></code></pre>
+
+<p>6- Push the files</p>
+
+<pre><code class="prettyprint prettyprinted" style=""><span class="pln">$ git push </span><span class="pun">-</span><span class="pln">u origin master
+</span><span class="typ">Counting</span><span class="pln"> objects</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2054</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">done</span><span class="pun">.</span><span class="pln">
+</span><span class="typ">Delta</span><span class="pln"> compression </span><span class="kwd">using</span><span class="pln"> up to </span><span class="lit">4</span><span class="pln"> threads</span><span class="pun">.</span><span class="pln">
+</span><span class="typ">Compressing</span><span class="pln"> objects</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%</span><span class="pln"> </span><span class="pun">(</span><span class="lit">2035</span><span class="pun">/</span><span class="lit">2035</span><span class="pun">),</span><span class="pln"> </span><span class="kwd">done</span><span class="pun">.</span><span class="pln">
+</span><span class="typ">Writing</span><span class="pln"> objects</span><span class="pun">:</span><span class="pln">   </span><span class="lit">1</span><span class="pun">%</span><span class="pln"> </span><span class="pun">(</span><span class="lit">41</span><span class="pun">/</span><span class="lit">2054</span><span class="pun">),</span><span class="pln"> </span><span class="lit">4.41</span><span class="pln"> </span><span class="typ">MiB</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="lit">844.00</span><span class="pln"> </span><span class="typ">KiB</span><span class="pun">/</span><span class="pln">s</span></code></pre>
+
+<p>You should see the following when it's done</p>
+
+<pre><code class="prettyprint prettyprinted" style=""><span class="typ">Total</span><span class="pln"> </span><span class="lit">2054</span><span class="pln"> </span><span class="pun">(</span><span class="pln">delta </span><span class="lit">219</span><span class="pun">),</span><span class="pln"> reused </span><span class="lit">0</span><span class="pln"> </span><span class="pun">(</span><span class="pln">delta </span><span class="lit">0</span><span class="pun">)</span><span class="pln">
+</span><span class="typ">To</span><span class="pln"> git@bitbucket</span><span class="pun">.</span><span class="pln">org</span><span class="pun">:[</span><span class="pln">user</span><span class="pun">]/[</span><span class="kwd">my</span><span class="pun">-</span><span class="pln">repo</span><span class="pun">].</span><span class="pln">git
+ </span><span class="pun">*</span><span class="pln"> </span><span class="pun">[</span><span class="kwd">new</span><span class="pln"> branch</span><span class="pun">]</span><span class="pln">      master </span><span class="pun">-&amp;</span><span class="pln">gt</span><span class="pun">;</span><span class="pln"> master
+</span><span class="typ">Branch</span><span class="pln"> master </span><span class="kwd">set</span><span class="pln"> up to track remote branch master </span><span class="kwd">from</span><span class="pln"> origin</span><span class="pun">.</span></code></pre>
+</div>
+<div class="clearfix mt1 mb3 mx2 py2">
+<div class="clearfix border-bottom" itemprop="author">
+<h4>
+Written by
+<a class="bold user" href="https://coderwall.com/victorbrca" id="user_120977" itemid="120977" itemscope="" itemtype="http://schema.org/Person">
+<span class="blue" itemprop="name">Victor Mendonca</span>
+</a>
+</h4>
+</div>
+<div class="clearfix mt1">
+<div class="btn btn-small pl0 mr1 mb1 xs-block">
+<script type="application/json" id="js-react-on-rails-context">{"inMailer":false,"i18nLocale":"en","i18nDefaultLocale":"en","href":"https://coderwall.com/p/2hnbua/how-to-add-an-existing-folder-on-your-computer-to-a-new-git-repo","location":"/p/2hnbua/how-to-add-an-existing-folder-on-your-computer-to-a-new-git-repo","scheme":"https","host":"coderwall.com","port":null,"pathname":"/p/2hnbua/how-to-add-an-existing-folder-on-your-computer-to-a-new-git-repo","search":null,"httpAcceptLanguage":"it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7","pusherKey":"56c8c9e2d013d4e9f315","user":null,"serverSide":false}</script>
+<script type="application/json" class="js-react-on-rails-component" data-component-name="HeartButton" data-dom-id="HeartButton-react-component-f373d75e-ff4b-40af-ba49-f8293abcf79d">{"heartableId":"protip_103460","href":"/p/2hnbua/likes","labels":["Recommend","Recommended"]}</script>
+    <div id="HeartButton-react-component-f373d75e-ff4b-40af-ba49-f8293abcf79d"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1">Recommend</span></div></div>
+    
+
+</div>
+<a class="btn btn-small pl0 mb1 mr1 xs-block" href="http://twitter.com/home?status=How+to+Add+an+Existing+Folder+on+Your+Computer+to+a+New+Git+Repo+via+%40coderwall%0A%0Ahttps%3A%2F%2Fcoderwall.com%2Fp%2F2hnbua" target="twitter">
+<span class="fixed-space-4"><i class="fa fa-twitter aqua h4"></i></span>
+<span>Say Thanks</span>
+</a>
+<div class="btn btn-small pl0 mb1 mr1 xs-block">
+<script type="application/json" class="js-react-on-rails-component" data-component-name="ProtipSubscribeButton" data-dom-id="ProtipSubscribeButton-react-component-853eb4fd-87a2-441f-afd8-56c4acdb4437">{}</script>
+    <div id="ProtipSubscribeButton-react-component-853eb4fd-87a2-441f-afd8-56c4acdb4437"><div data-reactroot="" class="inline pointer"><span class="fixed-space-4"><i class="fa fa-bell-slash-o"></i></span><!-- react-text: 4 -->Update Notifications Off<!-- /react-text --></div></div>
+    
+
+</div>
+<a class="btn btn-small pl0 mb1 mr1 xs-block" href="https://coderwall.com/signup">
+<span class="fixed-space-4"><i class="fa fa-comment-o black h4"></i></span>
+Respond
+</a>
+</div>
+</div>
+<div class="clearfix">
+</div>
+</div>
+</div>
+<div class="sm-col sm-col sm-col-12 md-col-4">
+<div class="clearfix sm-ml3 mt3 p1 pb3">
+<h5 class="mt0 mb1">
+<i class="fa fa-folder-o mr1"></i>
+Filed Under
+</h5>
+<hr>
+<div class="topic clearfix py1">
+<a href="https://coderwall.com/t/tools/popular">
+<div class="bold"><span class="translation_missing" title="translation missing: en.categories.long.tools">Tools</span></div>
+</a>
+</div>
+</div>
+<script type="application/json" id="js-react-on-rails-context">{"inMailer":false,"i18nLocale":"en","i18nDefaultLocale":"en","href":"https://coderwall.com/p/2hnbua/how-to-add-an-existing-folder-on-your-computer-to-a-new-git-repo","location":"/p/2hnbua/how-to-add-an-existing-folder-on-your-computer-to-a-new-git-repo","scheme":"https","host":"coderwall.com","port":null,"pathname":"/p/2hnbua/how-to-add-an-existing-folder-on-your-computer-to-a-new-git-repo","search":null,"httpAcceptLanguage":"en-US,en;q=0.9","pusherKey":"56c8c9e2d013d4e9f315","user":null,"serverSide":false}</script>
+<script type="application/json" class="js-react-on-rails-component" data-component-name="Sponsors" data-dom-id="Sponsors-react-component-8a4ac1d3-3fff-49b4-802d-eaea66fceeb0">{}</script>
+    <div id="Sponsors-react-component-8a4ac1d3-3fff-49b4-802d-eaea66fceeb0"><div data-reactroot="" class="clearfix sm-ml3 mt3 p1"><h5 class="mt0 mb1"><i class="fa fa-hand-o-right mr1"></i><!-- react-text: 5 -->Sponsors<!-- /react-text --></h5><hr class="mt1"></div></div>
+    
+
+<div class="clearfix sm-ml3 mt3 p1">
+<div class="clearfix">
+<div class="col col-7">
+<h5 class="mt0">
+<i class="fa fa-diamond mr1"></i>
+Awesome Job
+</h5>
+</div>
+<div class="col col-5">
+<div class="right font-sm bold">
+<a class="block" href="https://coderwall.com/jobs">
+See All Jobs
+<i class="fa fa-arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+<hr>
+<div class="clearfix py1">
+<a class="link no-hover mt2" ga-event-action="Protip Sidebar - Featured Job" ga-event-category="Jobs" ga-event-label="Ritchie Bros. - d1d40488-3daa-11e8-80a3-87b1f869a7fd" href="https://rbauction.taleo.net/careersection/rb_ex/jobdetail.ftl?job=1800003Y&amp;amp;tz=GMT-07%3A00" rel="nofollow" target="_blank">
+<div class="col col-3 md-col-2">
+<img class="" src="./How to Add an Existing Folder on Your Computer to a New Git Repo_files/8ab6fcb8-3daa-11e8-9bf2-3cbe28d1c41d.png" alt="8ab6fcb8 3daa 11e8 9bf2 3cbe28d1c41d">
+</div>
+</a><div class="overflow-hidden pl2"><a class="link no-hover mt2" ga-event-action="Protip Sidebar - Featured Job" ga-event-category="Jobs" ga-event-label="Ritchie Bros. - d1d40488-3daa-11e8-80a3-87b1f869a7fd" href="https://rbauction.taleo.net/careersection/rb_ex/jobdetail.ftl?job=1800003Y&amp;amp;tz=GMT-07%3A00" rel="nofollow" target="_blank">
+<div class="blue bold">
+Senior DevOps Engineer 
+</div>
+</a><div class="font-sm black"><a class="link no-hover mt2" ga-event-action="Protip Sidebar - Featured Job" ga-event-category="Jobs" ga-event-label="Ritchie Bros. - d1d40488-3daa-11e8-80a3-87b1f869a7fd" href="https://rbauction.taleo.net/careersection/rb_ex/jobdetail.ftl?job=1800003Y&amp;amp;tz=GMT-07%3A00" rel="nofollow" target="_blank">
+</a><div class="inline"><a class="link no-hover mt2" ga-event-action="Protip Sidebar - Featured Job" ga-event-category="Jobs" ga-event-label="Ritchie Bros. - d1d40488-3daa-11e8-80a3-87b1f869a7fd" href="https://rbauction.taleo.net/careersection/rb_ex/jobdetail.ftl?job=1800003Y&amp;amp;tz=GMT-07%3A00" rel="nofollow" target="_blank"></a><a rel="nofollow" target="_blank" ga-event-category="Jobs" ga-event-action="Protip Sidebar - Featured Job" ga-event-label="Ritchie Bros. - d1d40488-3daa-11e8-80a3-87b1f869a7fd" href="https://www.ritchiebros.com/careers">Ritchie Bros.</a></div>
+·
+<div class="inline">Vancouver/Burnaby, Canada</div>
+·
+<div class="inline">Full Time</div>
+</div>
+</div>
+
+</div>
+
+<div class="mt2 font-sm">
+<a class="border--green green bold" href="https://coderwall.com/jobs/new">
+Post a job for only
+$299
+</a>
+</div>
+</div>
+<div class="clearfix ml3 mt4" ga-location="Protip Sidebar">
+<div class="bsap bsap_1305410" id="bsap_1305410" data-serve="CVADVK7E"><!-- no ad -->
+<script type="text/javascript" id="auto_1" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</main>
+<footer class="border-top">
+<nav class="clearfix">
+<div class="col col-4 py1 mt1">
+<a class="btn" href="https://twitter.com/coderwall" target="_blank">
+@coderwall
+<i class="fa fa-twitter fa-1x ml1"></i>
+</a>
+</div>
+<div class="col col-8 py2 mt1">
+<div class="right">
+<a class="inline-block ml1" href="https://github.com/coderwall/coderwall-next" rel="nofollow">
+<i class="fa fa-github-alt"></i>
+</a>
+<a class="inline-block ml1" href="https://coderwall.com/t/hackerdesk/popular">
+<div class="sm-show"><i class="fa fa-gift"></i></div>
+</a>
+<a class="inline-block ml1 mr1" href="mailto:support@coderwall.com">
+Contact
+</a>
+<a class="inline-block mr1" href="https://coderwall.com/privacy_policy">Privacy</a>
+<a class="inline-block mr1" href="https://coderwall.com/tos">Terms</a>
+<p class="inline-block diminish inline mr1">Copyright 2018</p>
+</div>
+</div>
+</nav>
+</footer>
+</div>
+<script type="application/json" data-js-react-on-rails-store="store">{"currentUser":{"item":null},"currentProtip":{"item":{"id":103460,"body":"See this post on my [blog](http://wazem.blogspot.ca/2014/11/how-to-add-existing-folder-to-new-git.html).\r\n\r\n\r\nThis is a simple and quick tutorial on how to add an existing folder (and files) on your computer to a new git repo.\r\n\r\n1- Create your project online (like [Bitbucket](https://bitbucket.org/) or [GitHub](https://github.com/))\r\n\r\n2- CD into the folder where your files are and initialize it\r\n\r\n```\r\n$ git init\r\nInitialized empty Git repository in /home/victor/Sync/BitTorrentSync/victor/www/.git/\r\n```\r\n\r\n3- Add all your files to be tracked (if you have anything that you want to exclude, you might want to do that with .gitignore now)\r\n\r\n```\r\n$ git add *\r\n```\r\n\r\n4- Commit with a initial message\r\n\r\n```\r\n$ git commit -m \"My initial commit\"\r\n[master (root-commit) 652fc1a] My initial commit\r\n 1942 files changed, 41072 insertions(+)\r\n create mode 100644 Arri/ARRICAM Checklist Project/ARRICAM ST CHECKLIST.doc\r\n create mode 100644 Arri/ARRICAM Checklist Project/k4.44256.0.jpg\r\n create mode 100644 Arri/ARRICAM Checklist Project/k5.42387.0.jpg\r\n create mode 100644 Arri/ARRICAM Checklist Project/k5.42388.0.jpg\r\n...\r\n create mode 100644 wazem.org/sub.sites/Koken/photo.spheres\r\n create mode 100644 wazem.org/sub.sites/Koken_Installer.zip\r\n create mode 100644 wazem.org/sub.sites/Koken_Installer/koken/index.php\r\n```\r\n\r\n5- Add the remote location (example below is for Bitbucket)\r\n\r\n```\r\n$ git remote add origin git@bitbucket.org:[user]/[my-repo].git\r\n```\r\n\r\n6- Push the files\r\n\r\n```\r\n$ git push -u origin master\r\nCounting objects: 2054, done.\r\nDelta compression using up to 4 threads.\r\nCompressing objects: 100% (2035/2035), done.\r\nWriting objects:   1% (41/2054), 4.41 MiB | 844.00 KiB/s\r\n```\r\n\r\nYou should see the following when it's done\r\n\r\n```\r\nTotal 2054 (delta 219), reused 0 (delta 0)\r\nTo git@bitbucket.org:[user]/[my-repo].git\r\n * [new branch]      master -\u0026gt; master\r\nBranch master set up to track remote branch master from origin.\r\n```","created_at":"2014-11-04T00:17:09.468Z","heartableId":"protip_103460","hearts":3,"html":"\u003cp\u003eSee this post on my \u003ca href=\"http://wazem.blogspot.ca/2014/11/how-to-add-existing-folder-to-new-git.html\" rel=\"nofollow\"\u003eblog\u003c/a\u003e.\u003c/p\u003e\n\n\u003cp\u003eThis is a simple and quick tutorial on how to add an existing folder (and files) on your computer to a new git repo.\u003c/p\u003e\n\n\u003cp\u003e1- Create your project online (like \u003ca href=\"https://bitbucket.org/\" rel=\"nofollow\"\u003eBitbucket\u003c/a\u003e or \u003ca href=\"https://github.com/\" rel=\"nofollow\"\u003eGitHub\u003c/a\u003e)\u003c/p\u003e\n\n\u003cp\u003e2- CD into the folder where your files are and initialize it\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode class=\"prettyprint\"\u003e$ git init\nInitialized empty Git repository in /home/victor/Sync/BitTorrentSync/victor/www/.git/\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003e3- Add all your files to be tracked (if you have anything that you want to exclude, you might want to do that with .gitignore now)\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode class=\"prettyprint\"\u003e$ git add *\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003e4- Commit with a initial message\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode class=\"prettyprint\"\u003e$ git commit -m \"My initial commit\"\n[master (root-commit) 652fc1a] My initial commit\n 1942 files changed, 41072 insertions(+)\n create mode 100644 Arri/ARRICAM Checklist Project/ARRICAM ST CHECKLIST.doc\n create mode 100644 Arri/ARRICAM Checklist Project/k4.44256.0.jpg\n create mode 100644 Arri/ARRICAM Checklist Project/k5.42387.0.jpg\n create mode 100644 Arri/ARRICAM Checklist Project/k5.42388.0.jpg\n...\n create mode 100644 wazem.org/sub.sites/Koken/photo.spheres\n create mode 100644 wazem.org/sub.sites/Koken_Installer.zip\n create mode 100644 wazem.org/sub.sites/Koken_Installer/koken/index.php\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003e5- Add the remote location (example below is for Bitbucket)\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode class=\"prettyprint\"\u003e$ git remote add origin git@bitbucket.org:[user]/[my-repo].git\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003e6- Push the files\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode class=\"prettyprint\"\u003e$ git push -u origin master\nCounting objects: 2054, done.\nDelta compression using up to 4 threads.\nCompressing objects: 100% (2035/2035), done.\nWriting objects:   1% (41/2054), 4.41 MiB | 844.00 KiB/s\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eYou should see the following when it's done\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode class=\"prettyprint\"\u003eTotal 2054 (delta 219), reused 0 (delta 0)\nTo git@bitbucket.org:[user]/[my-repo].git\n * [new branch]      master -\u0026amp;gt; master\nBranch master set up to track remote branch master from origin.\u003c/code\u003e\u003c/pre\u003e\n","public_id":"2hnbua","subscribed":false,"tags":["git","bash"],"title":"How to Add an Existing Folder on Your Computer to a New Git Repo","upvotes":3}},"comments":{"items":[]}}</script>
+  <script>
+    // perfectaudience
+    (function () {
+        window._pa = window._pa || {};
+        var pa = document.createElement('script');
+        pa.type = 'text/javascript';
+        pa.async = true;
+        pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/50775e2d30a1d50002000221.js";
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(pa, s);
+    })();    
+  </script>
+
+
+
+</body></html>
